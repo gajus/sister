@@ -14,13 +14,13 @@ Foundation for your emitter implementation.
 * `listener` A function to execute when the event is triggered.
 
 <a name="emitter-on"></a>
-### `emitter.on(event, listener)`
+#### `emitter.on(event, listener)`
 
 - Add `listener` for `event`.
 - Return `emitter`.
 
 <a name="emitter-trigger"></a>
-### `emitter.trigger(event, data)`
+#### `emitter.trigger(event, data)`
 
 - Invoke `event` listeners (in sequence) with the supplied argument.
 - Return `emitter`.
