@@ -2,6 +2,8 @@
 
 Foundation for your emitter implementation.
 
+[I have observed](#similar-libraries) that there is a tendency to write your own implementation of event emitter. I have written a starter pack for those wishing to improve upon existing variations of event emitter implementation.
+
 ## Methods
 
 - [emitter.<b>on</b>(event, listener)](#emitter-on)
