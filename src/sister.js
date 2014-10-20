@@ -1,3 +1,7 @@
+/**
+* @link https://github.com/gajus/sister for the canonical source repository
+* @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause
+*/
 function S () {
     if (!(this instanceof S)) {
         return new S();
@@ -19,5 +23,6 @@ S.prototype.trigger = function (name, data) {
             this._events[name][i++](data);
         }
     }
+    return this;
 };
 module.exports = S;

@@ -24,11 +24,4 @@ gulp.task('watch', function () {
     gulp.watch(['./src/*', './package.json'], ['default']);
 });
 
-gulp.task('travis', ['default'], function (cb) {
-    karma.start({
-        configFile: __dirname + '/karma.conf.js',
-        singleRun: true
-    }, cb);
-});
-
 gulp.task('default', ['distribute']);
