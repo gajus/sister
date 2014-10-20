@@ -1,5 +1,8 @@
 {
-    "name": "sister",
-    "version": "0.0.0",
-    "description": ""
+  "name": "sister",
+  "version": "0.0.0",
+  "description": "",
+  "devDependencies": {
+    "mocha": "^1.21.5"
+  }
 }
