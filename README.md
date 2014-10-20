@@ -103,6 +103,7 @@ There are several existing alternatives that you might want to consider before s
 |[yields/buffer-events](https://github.com/yields/buffer-events)| 3 | 0 | 4 | 2014-06-27 |
 |[aconbere/evented](https://github.com/aconbere/evented)| 2 | 2 | 10 | 2010-10-27 |
 |[shokai/event_emitter.js](https://github.com/shokai/event_emitter.js)| 2 | 2 | 39 | 2013-05-17 |
+|[aluarosi/event0.js](https://github.com/aluarosi/event0.js)| 2 | 1 | 10 | 2014-03-17 |
 |[benjreinhart/node-event-emitter](https://github.com/benjreinhart/node-event-emitter)| 2 | 1 | 5 | 2014-03-29 |
 |[madimp/deferredEventEmitter](https://github.com/madimp/deferredEventEmitter)| 2 | 1 | 6 | 2012-05-13 |
 |[pierrec/node-ev](https://github.com/pierrec/node-ev)| 2 | 1 | 13 | 2012-06-25 |
@@ -140,7 +141,7 @@ There are several existing alternatives that you might want to consider before s
 |[jkroso/dom-emitter](https://github.com/jkroso/dom-emitter)| 1 | 0 | 48 | 2013-08-29 |
 |[jls/emitJS](https://github.com/jls/emitJS)| 1 | 0 | 9 | 2011-10-25 |
 |[ksdlck/Emitting](https://github.com/ksdlck/Emitting)| 1 | 0 | 14 | 2012-01-19 |
-|[maxhoffmann/emitter/blob/master/README.md](https://github.com/maxhoffmann/emitter/blob/master/README.md)| 1 | 0 | 0 | 2014-08-20 |
+|[maxhoffmann/emitter](https://github.com/maxhoffmann/emitter)| 1 | 0 | 40 | 2014-08-20 |
 |[npmcomponent/littlebitselectronics-EventEmitter2](https://github.com/npmcomponent/littlebitselectronics-EventEmitter2)| 1 | 0 | 290 | 2013-08-13 |
 |[nrn/nee](https://github.com/nrn/nee)| 1 | 0 | 4 | 2014-09-03 |
 |[pete-otaqui/EventEmitter](https://github.com/pete-otaqui/EventEmitter)| 1 | 0 | 7 | 2011-05-24 |
