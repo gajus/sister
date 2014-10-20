@@ -25,6 +25,18 @@ Foundation for your emitter implementation.
 - Invoke `event` listeners (in sequence) with the supplied argument.
 - Return `emitter`.
 
+## Usage
+
+```js
+var Sister = require('sister'),
+    emitter = Sister();
+
+emitter.on('foo', console.log);
+emitter.trigger('foo', 'bar');
+```
+
+This example will print "bar" in the `console.log`.
+
 ## Similar Libraries
 
 There are several existing alternatives that you might want to consider before starting to write your own implementation of an event emitter.
