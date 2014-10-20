@@ -166,7 +166,6 @@ There are several existing alternatives that you might want to consider before s
 |[LingyuCoder/EventEmitter](https://github.com/LingyuCoder/EventEmitter)| 0 | 0 | 7 | 2014-09-28 |
 |[RangerMauve/mqtt-emitter](https://github.com/RangerMauve/mqtt-emitter)| 0 | 0 | 8 | 2014-09-07 |
 |[Raynos/cached-events](https://github.com/Raynos/cached-events)| 0 | 0 | 1 | 2012-08-25 |
-|[Raynos/cached-events](https://github.com/Raynos/cached-events)| 0 | 0 | 1 | 2012-08-25 |
 |[Raynos/multi-event](https://github.com/Raynos/multi-event)| 0 | 0 | 5 | 2012-08-10 |
 |[STRML/forward-emitter](https://github.com/STRML/forward-emitter)| 0 | 0 | 2 | 2014-06-30 |
 |[SoftwareDevPro/EventEmitter.coffee](https://github.com/SoftwareDevPro/EventEmitter.coffee)| 0 | 0 | 3 | 2013-11-28 |
@@ -199,7 +198,6 @@ There are several existing alternatives that you might want to consider before s
 |[exfm/event-emitter](https://github.com/exfm/event-emitter)| 0 | 0 | 2 | 2012-09-07 |
 |[fabiosantoscode/clientjs-event-emitter](https://github.com/fabiosantoscode/clientjs-event-emitter)| 0 | 0 | 2 | 2013-01-22 |
 |[fnobi/EventEmitter](https://github.com/fnobi/EventEmitter)| 0 | 0 | 15 | 2014-08-12 |
-|[fnobi/Observer](https://github.com/fnobi/Observer)| 0 | 0 | 13 | 2013-10-09 |
 |[fskreuz/MiniEvent](https://github.com/fskreuz/MiniEvent)| 0 | 0 | 3 | 2013-09-04 |
 |[gaborsar/MicroEventEmitter](https://github.com/gaborsar/MicroEventEmitter)| 0 | 0 | 6 | 2014-06-25 |
 |[hachr/EventEmitter](https://github.com/hachr/EventEmitter)| 0 | 0 | 2 | 2014-05-21 |
@@ -222,7 +220,6 @@ There are several existing alternatives that you might want to consider before s
 |[mvantil/FutureEventEmitter](https://github.com/mvantil/FutureEventEmitter)| 0 | 0 | 3 | 2013-03-30 |
 |[nathanfaucett/event_emitter](https://github.com/nathanfaucett/event_emitter)| 0 | 0 | 28 | 2014-10-19 |
 |[nathanmacinnes/edifice](https://github.com/nathanmacinnes/edifice)| 0 | 0 | 2 | 2014-04-28 |
-|[neocoder/emmi](https://github.com/neocoder/emmi)| 0 | 0 | 1 | 2013-08-23 |
 |[neocoder/emmi](https://github.com/neocoder/emmi)| 0 | 0 | 1 | 2013-08-23 |
 |[nib-health-funds/forward-events](https://github.com/nib-health-funds/forward-events)| 0 | 0 | 3 | 2014-07-14 |
 |[niyazpk/EventEmitter](https://github.com/niyazpk/EventEmitter)| 0 | 0 | 16 | 2014-02-08 |
