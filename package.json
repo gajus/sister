@@ -1,8 +1,12 @@
 {
   "name": "sister",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "main": "dist/sister.js",
   "description": "",
   "devDependencies": {
-    "mocha": "^1.21.5"
+    "chai": "^1.9.2",
+    "gulp": "^3.8.8",
+    "gulp-jshint": "^1.8.5",
+    "del": "^0.1.3"
   }
 }

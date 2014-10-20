@@ -1,8 +1,7 @@
 var pkg = require('./package.json'),
     gulp = require('gulp'),
     jshint = require('gulp-jshint'),
-    del = require('del'),
-    exec = require('child_process').exec;
+    del = require('del');
 
 gulp.task('lint', function () {
     return gulp
@@ -17,7 +16,7 @@ gulp.task('clean', ['lint'], function (cb) {
 
 gulp.task('distribute', ['clean'], function () {
     return gulp
-        .src('./dist/sister.js')
+        .src('./src/sister.js')
         .pipe(gulp.dest('./dist/'));
 });
 
