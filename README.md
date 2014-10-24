@@ -72,7 +72,7 @@ This example will print "bar" in the `console.log`.
 
 There are several existing alternatives that you might want to consider before starting to write your own implementation of an event emitter.
 
-| Repository | Starts | Forks | Commits | Last Commit |
+| Repository | Stars | Forks | Commits | Last Commit |
 | --- | --- | --- | --- | --- |
 |[asyncly/EventEmitter2](https://github.com/asyncly/EventEmitter2)| 846 | 92 | 321 | 2014-06-12 |
 |[Wolfy87/EventEmitter](https://github.com/Wolfy87/EventEmitter)| 711 | 102 | 628 | 2014-09-30 |
