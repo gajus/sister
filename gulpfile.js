@@ -1,7 +1,9 @@
 var pkg = require('./package.json'),
     gulp = require('gulp'),
-    header = require('gulp-header'),
     jshint = require('gulp-jshint'),
+    header = require('gulp-header'),
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify'),
     mocha = require('gulp-mocha'),
     fs = require('fs'),
     del = require('del');
@@ -28,6 +30,10 @@ gulp.task('version', ['distribute'], function () {
 
     gulp
         .src('./dist/sister.js')
+        .pipe(header('/**\n* @version <%= version %>\n* @link https://github.com/gajus/sister for the canonical source repository\n* @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause\n*/\n', {version: pkg.version}))
+        .pipe(gulp.dest('./dist/'))
+        .pipe(uglify())
+        .pipe(rename('sister.min.js'))
         .pipe(header('/**\n* @version <%= version %>\n* @link https://github.com/gajus/sister for the canonical source repository\n* @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause\n*/\n', {version: pkg.version}))
         .pipe(gulp.dest('./dist/'));
 
