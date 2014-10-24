@@ -1,5 +1,10 @@
 # Sister
 
+[![Build Status](https://travis-ci.org/gajus/sister.png?branch=master)](https://travis-ci.org/gajus/sister)
+[![NPM version](https://badge.fury.io/js/sister.svg)](http://badge.fury.io/js/sister)
+[![Bower version](https://badge.fury.io/bo/sister.svg)](http://badge.fury.io/bo/sister)
+[![Tweet Button](./.readme/tweet-button.png)](https://twitter.com/intent/retweet?tweet_id=524280009729769473)
+
 Foundation for your emitter implementation.
 
 [I have observed](#similar-libraries) that there is a tendency to write your own implementation of event emitter. I have written a starter pack for those wishing to improve upon existing variations of event emitter implementation.
