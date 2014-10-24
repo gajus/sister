@@ -2,6 +2,7 @@ var pkg = require('./package.json'),
     gulp = require('gulp'),
     header = require('gulp-header'),
     jshint = require('gulp-jshint'),
+    mocha = require('gulp-mocha'),
     fs = require('fs'),
     del = require('del');
 
@@ -41,6 +42,12 @@ gulp.task('version', ['distribute'], function () {
 
 gulp.task('watch', function () {
     gulp.watch(['./src/*', './package.json'], ['default']);
+});
+
+gulp.task('test', ['default'], function (cb) {
+    gulp
+        .src('./test/sister.js', {read: false})
+        .pipe(mocha());
 });
 
 gulp.task('default', ['version']);
