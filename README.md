@@ -13,7 +13,7 @@ Please [submit your implementation](https://github.com/gajus/sister/issues) to t
 
 ## In All Seriousness
 
-Sister is 1kb event emitter that does two things: `on` and `trigger`. It [performs well](http://jsperf.com/sister-event) (~18,313,548 operations/sec in browser). If you need something more advanced, consider one of the existing, mature [alternatives](#similar-libraries).
+Sister is 0.5kb event emitter that does two things: `on` and `trigger`. It [performs well](http://jsperf.com/sister-event) (~18,313,548 operations/sec in browser). If you need something more advanced, consider one of the existing, mature [alternatives](#similar-libraries).
 
 ## Node
 
