@@ -6,6 +6,28 @@ Foundation for your emitter implementation.
 
 Please [submit your implementation](https://github.com/gajus/sister/issues) to the index when you are done.
 
+## In All Seriousness
+
+Sister is event emitter that does two things: `on` and `trigger`. It [performs well](http://jsperf.com/sister-event) (~8,781,848 operations/sec). If you need something more advanced, consider one of the existing, mature [alternatives](#similar-libraries).
+
+## Node
+
+Download using NPM:
+
+```sh
+npm install sister --save
+```
+
+## Browser
+
+Download using Bower:
+
+```sh
+bower install sister --save
+```
+
+In browser, use `Sister` `window` object.
+
 ## Methods
 
 - [emitter.<b>on</b>(event, listener)](#emitter-on)
@@ -249,11 +271,3 @@ There are several existing alternatives that you might want to consider before s
 |[tvsudhir/EventEmitter](https://github.com/tvsudhir/EventEmitter)| 0 | 0 | 11 | 2014-07-30 |
 |[yomotsu/PeriodicEventEmitter](https://github.com/yomotsu/PeriodicEventEmitter)| 0 | 0 | 1 | 2014-08-11 |
 |[zaphod1984/eventEmitterDemux](https://github.com/zaphod1984/eventEmitterDemux)| 0 | 0 | 8 | 2014-02-19 |
-
-## Download
-
-Using NPM:
-
-```sh
-npm install sister
-```

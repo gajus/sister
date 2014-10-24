@@ -14,10 +14,10 @@ describe('Sister', function () {
             sister.on('foo', 'bar');
             expect(sister._events['foo']).to.deep.equal(['bar']);
         });
-        it('adds multiple listeners to the same event', function () {
+        it('adds multiple listeners to the same event in reverse order', function () {
             sister.on('foo', 'bar');
             sister.on('foo', 'baz');
-            expect(sister._events['foo']).to.deep.equal(['bar', 'baz']);
+            expect(sister._events['foo']).to.deep.equal(['baz', 'bar']);
         });
         it('separates listeners for different events', function () {
             sister.on('foo', 1);
@@ -26,16 +26,16 @@ describe('Sister', function () {
         });
     });
     describe('.trigger', function () {
-        it('invokes listeners for matched events', function () {
-            var i = 0;
+        it('invokes listeners for matched events in order', function () {
+            var i = '';
             sister.on('foo', function () {
-                i++;
+                i += 'a';
             });
             sister.on('foo', function () {
-                i++;
+                i += 'b';
             });
             sister.trigger('foo');
-            expect(i).to.equal(2);
+            expect(i).to.equal('ab');
         });
         it('passes data parameter to the listeners', function () {
             var data;
