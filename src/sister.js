@@ -8,6 +8,7 @@ function Sister () {
     }
     this._events = {};
 }
+
 /**
  * @name listener
  * @function
@@ -23,6 +24,7 @@ Sister.prototype.on = function (name, listener) {
     this._events[name].unshift(listener);
     return this;
 };
+
 /**
  * @param {String} name Event name.
  * @param {Object} data Event data.
