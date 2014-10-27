@@ -1,28 +1,25 @@
-var expect = require('chai').expect,
-    Sister = require('../dist/sister.js');
-
 describe('Sister', function () {
     var sister;
     beforeEach(function () {
-        sister = new Sister();
+        sister = new gajus.Sister();
     });
     it('creates an event server with 0 events', function () {
-        expect(Object.keys(sister._events).length).to.equal(0);
+        expect(Object.keys(sister._events).length).toEqual(0);
     });
     describe('.on', function () {
         it('adds a new event', function () {
             sister.on('foo', 'bar');
-            expect(sister._events['foo']).to.deep.equal(['bar']);
+            expect(sister._events['foo']).toEqual(['bar']);
         });
         it('adds multiple listeners to the same event in reverse order', function () {
             sister.on('foo', 'bar');
             sister.on('foo', 'baz');
-            expect(sister._events['foo']).to.deep.equal(['baz', 'bar']);
+            expect(sister._events['foo']).toEqual(['baz', 'bar']);
         });
         it('separates listeners for different events', function () {
             sister.on('foo', 1);
             sister.on('bar', 2);
-            expect(sister._events).to.deep.equal({foo: [1], bar: [2]});
+            expect(sister._events).toEqual({foo: [1], bar: [2]});
         });
     });
     describe('.trigger', function () {
@@ -35,7 +32,7 @@ describe('Sister', function () {
                 i += 'b';
             });
             sister.trigger('foo');
-            expect(i).to.equal('ab');
+            expect(i).toEqual('ab');
         });
         it('passes data parameter to the listeners', function () {
             var data;
@@ -43,7 +40,7 @@ describe('Sister', function () {
                 data = _data;
             });
             sister.trigger('foo', 1);
-            expect(data).to.equal(1);
+            expect(data).toEqual(1);
         });
     });
 });

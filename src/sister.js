@@ -2,9 +2,9 @@
 * @link https://github.com/gajus/sister for the canonical source repository
 * @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause
 */
-function S () {
-    if (!(this instanceof S)) {
-        return new S();
+function Sister () {
+    if (!(this instanceof Sister)) {
+        return new Sister();
     }
     this._events = {};
 }
@@ -18,7 +18,7 @@ function S () {
  * @param {String} name Event name.
  * @param {listener} listener
  */
-S.prototype.on = function (name, listener) {
+Sister.prototype.on = function (name, listener) {
     this._events[name] = this._events[name] || [];
     this._events[name].unshift(listener);
     return this;
@@ -27,7 +27,7 @@ S.prototype.on = function (name, listener) {
  * @param {String} name Event name.
  * @param {Object} data Event data.
  */
-S.prototype.trigger = function (name, data) {
+Sister.prototype.trigger = function (name, data) {
     var listeners = this._events[name],
         i;
 
@@ -39,8 +39,7 @@ S.prototype.trigger = function (name, data) {
     }
 };
 
-if (module !== undefined && module.exports) {
-    module.exports = S;
-} else {
-    window.Sister = S;
-}
+global.gajus = global.gajus || {};
+global.gajus.Sister = Sister;
+
+module.exports = Sister;

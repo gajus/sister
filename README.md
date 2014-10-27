@@ -31,7 +31,7 @@ Download using Bower:
 bower install sister --save
 ```
 
-In browser, use `Sister` `window` object.
+In browser, use `gajus.Sister` `window` object.
 
 ## Methods
 

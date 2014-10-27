@@ -1,10 +1,11 @@
 var pkg = require('./package.json'),
+    karma = require('karma').server,
     gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     header = require('gulp-header'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
-    mocha = require('gulp-mocha'),
+    browserify = require('gulp-browserify'),
     fs = require('fs'),
     del = require('del');
 
@@ -19,13 +20,16 @@ gulp.task('clean', ['lint'], function (cb) {
     del(['dist'], cb);
 });
 
-gulp.task('distribute', ['clean'], function () {
+gulp.task('bundle', ['clean'], function () {
     return gulp
         .src('./src/sister.js')
+        .pipe(browserify({
+            //debug : true
+        }))
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('version', ['distribute'], function () {
+gulp.task('version', ['bundle'], function () {
     var bower = require('./bower.json');
 
     gulp
@@ -42,6 +46,7 @@ gulp.task('version', ['distribute'], function () {
     bower.version = pkg.version;
     bower.keywords = pkg.keywords;
     bower.license = pkg.license;
+    bower.authors = [pkg.author];
 
     fs.writeFile('./bower.json', JSON.stringify(bower, null, 4));
 });
@@ -51,9 +56,10 @@ gulp.task('watch', function () {
 });
 
 gulp.task('test', ['default'], function (cb) {
-    gulp
-        .src('./test/sister.js', {read: false})
-        .pipe(mocha());
+    karma.start({
+        configFile: __dirname + '/karma.conf.js',
+        singleRun: true
+    }, cb);
 });
 
 gulp.task('default', ['version']);
