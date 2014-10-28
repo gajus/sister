@@ -34,11 +34,11 @@ gulp.task('version', ['bundle'], function () {
 
     gulp
         .src('./dist/sister.js')
-        .pipe(header('/**\n* @version <%= version %>\n* @link https://github.com/gajus/sister for the canonical source repository\n* @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause\n*/\n', {version: pkg.version}))
+        .pipe(header('/**\n * @version <%= version %>\n * @link https://github.com/gajus/sister for the canonical source repository\n * @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause\n */\n', {version: pkg.version}))
         .pipe(gulp.dest('./dist/'))
         .pipe(uglify())
         .pipe(rename('sister.min.js'))
-        .pipe(header('/**\n* @version <%= version %>\n* @link https://github.com/gajus/sister for the canonical source repository\n* @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause\n*/\n', {version: pkg.version}))
+        .pipe(header('/**\n * @version <%= version %>\n * @link https://github.com/gajus/sister for the canonical source repository\n * @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause\n */\n', {version: pkg.version}))
         .pipe(gulp.dest('./dist/'));
 
     bower.name = pkg.name;
