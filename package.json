@@ -20,11 +20,13 @@
     "gulp-mocha": "^1.1.1",
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^1.0.1",
+    "jsonfile": "^2.0.0",
     "karma": "^0.12.24",
     "karma-jasmine": "^0.1.5",
     "karma-phantomjs-launcher": "^0.1.4"
   },
   "scrips": {
     "test": "gulp test"
-  }
+  },
+  "dependencies": {}
 }
