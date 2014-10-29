@@ -1,8 +1,8 @@
 {
   "name": "sister",
   "description": "Event manager.",
-  "version": "2.0.1",
-  "main": "src/sister.js",
+  "version": "2.0.2",
+  "main": "dist/sister.js",
   "author": "Gajus Kuizinas <gk@anuary.com>",
   "repository": {
     "type": "git",
