@@ -1,5 +1,5 @@
 /**
- * @version 2.0.2
+ * @version 2.0.3
  * @link https://github.com/gajus/sister for the canonical source repository
  * @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause
  */
