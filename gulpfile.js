@@ -1,5 +1,6 @@
 var karma = require('karma').server,
     gulp = require('gulp'),
+    mocha = require('gulp-mocha'),
     jshint = require('gulp-jshint'),
     header = require('gulp-header'),
     rename = require('gulp-rename'),
@@ -54,14 +55,13 @@ gulp.task('version', ['bundle'], function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(['./src/*', './package.json'], ['default']);
+    gulp.watch(['./src/*', './tests/*', './package.json'], ['default']);
 });
 
-gulp.task('test', ['default'], function (cb) {
-    karma.start({
-        configFile: __dirname + '/karma.conf.js',
-        singleRun: true
-    }, cb);
+gulp.task('test', ['version'], function () {
+    return gulp
+        .src('./tests/*.js', {read: false})
+        .pipe(mocha());
 });
 
-gulp.task('default', ['version']);
+gulp.task('default', ['test']);

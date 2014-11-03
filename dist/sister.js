@@ -14,19 +14,32 @@ function Sister () {
         events = {};
 
     /**
-     * @name listener
+     * @name handler
      * @function
      * @param {Object} data Event data.
      */
 
     /**
      * @param {String} name Event name.
-     * @param {listener} listener
+     * @param {handler} handler
+     * @return {listener}
      */
-    sister.on = function (name, listener) {
+    sister.on = function (name, handler) {
+        var listener = {name: name, handler: handler};
         events[name] = events[name] || [];
         events[name].unshift(listener);
-        return this;
+        return listener;
+    };
+
+    /**
+     * @param {listener}
+     */
+    sister.off = function (listener) {
+        var index = events[listener.name].indexOf(listener);
+
+        if (index != -1) {
+            events[listener.name].splice(index, 1);
+        }
     };
 
     /**
@@ -40,7 +53,7 @@ function Sister () {
         if (listeners) {
             i = listeners.length;
             while (i--) {
-                listeners[i](data);
+                listeners[i].handler(data);
             }
         }
     };

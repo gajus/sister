@@ -13,7 +13,7 @@ Please [submit your implementation](https://github.com/gajus/sister/issues) to t
 
 ## In All Seriousness
 
-Sister is 0.5kb event emitter that does two things: `on` and `trigger`. It [performs well](http://jsperf.com/sister-event) (~18,313,548 operations/sec in browser). If you need something more advanced, consider one of the existing, mature [alternatives](#similar-libraries).
+Sister is 0.5kb event emitter that does three things: `on`, `off` and `trigger`. It [performs well](http://jsperf.com/sister-event) (~18,313,548 operations/sec in browser). If you need something more advanced, consider one of the existing, mature [alternatives](#similar-libraries).
 
 ## Node
 
@@ -35,20 +35,27 @@ In browser, use `gajus.Sister` `window` object.
 
 ## Methods
 
-- [emitter.<b>on</b>(event, listener)](#emitter-on)
+- [emitter.<b>on</b>(event, handler)](#emitter-on)
+- [emitter.<b>off</b>(listener)](#emitter-off)
 - [emitter.<b>trigger</b>(event, data)](#emitter-trigger)
 
 ## Parameters
 
 * `emitter` Instance of the `Sister()` object.
 * `event` Name of the event.
-* `listener` A function to execute when the event is triggered.
+* `handler` A function to execute when the event is triggered.
+* `listener` Event listener.
 
 <a name="emitter-on"></a>
-#### `emitter.on(event, listener)`
+#### `emitter.on(event, handler)`
 
-- Add `listener` for `event`.
-- Return `emitter`.
+- Add `handler` for `event`.
+- Return `listener`.
+
+<a name="emitter-off"></a>
+#### `emitter.off(listener)`
+
+- Remove `listener`.
 
 <a name="emitter-trigger"></a>
 #### `emitter.trigger(event, data)`
@@ -60,10 +67,13 @@ In browser, use `gajus.Sister` `window` object.
 
 ```js
 var Sister = require('sister'),
-    emitter = Sister();
+    emitter = Sister(),
+    listener;
 
-emitter.on('foo', console.log);
+listener = emitter.on('foo', console.log);
 emitter.trigger('foo', 'bar');
+emitter.off(listener);
+emitter.trigger('foo', 'baz');
 ```
 
 This example will print "bar" in the `console.log`.
