@@ -78,6 +78,7 @@ There are several existing alternatives that you might want to consider before s
 |[Wolfy87/EventEmitter](https://github.com/Wolfy87/EventEmitter)| 711 | 102 | 628 | 2014-09-30 |
 |[RobertWHurst/LucidJS](https://github.com/RobertWHurst/LucidJS)| 375 | 15 | 141 | 2014-09-26 |
 |[jeromeetienne/microevent.js](https://github.com/jeromeetienne/microevent.js)| 284 | 57 | 17 | 2014-07-23 |
+|[uxder/Radio](https://github.com/uxder/Radio)| 242 | 20 | 47 | 2013-06-14 |
 |[component/emitter](https://github.com/component/emitter)| 150 | 52 | 69 | 2014-08-29 |
 |[necolas/emitter.js](https://github.com/necolas/emitter.js)| 75 | 3 | 51 | 2014-05-16 |
 |[mkuklis/asEvented](https://github.com/mkuklis/asEvented)| 74 | 13 | 80 | 2014-01-10 |
