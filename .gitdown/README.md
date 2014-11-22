@@ -1,12 +1,8 @@
-<!--
-This file has been generated using GitDown (https://github.com/gajus/gitdown).
-Direct edits to this will be be overwritten. Look for GitDown markup file under ./.gitdown/ path.
--->
-<h1 id="sister">Sister</h1>
+# Sister
 
-[![Travis build status](http://img.shields.io/travis/gajus/sister/master.svg?style=flat)](https://travis-ci.org/gajus/sister)
-[![NPM version](http://img.shields.io/npm/v/sister.svg?style=flat)](https://www.npmjs.org/package/sister)
-[![Bower version](http://img.shields.io/bower/v/sister.svg?style=flat)](http://bower.io/search/?q=sister)
+{"gitdown": "badge", "name": "travis"}
+{"gitdown": "badge", "name": "npm-version"}
+{"gitdown": "badge", "name": "bower-version"}
 
 Foundation for your emitter implementation.
 
@@ -14,11 +10,11 @@ Foundation for your emitter implementation.
 
 Please [submit your implementation](https://github.com/gajus/sister/issues) to the index when you are done.
 
-<h2 id="sister-in-all-seriousness">In All Seriousness</h2>
+## In All Seriousness
 
 Sister is 0.5kb event emitter that does three things: `on`, `off` and `trigger`. It [performs well](http://jsperf.com/sister-event) (~18,313,548 operations/sec in browser). If you need something more advanced, consider one of the existing, mature [alternatives](#similar-libraries).
 
-<h2 id="sister-node">Node</h2>
+## Node
 
 Download using NPM:
 
@@ -26,7 +22,7 @@ Download using NPM:
 npm install sister --save
 ```
 
-<h2 id="sister-browser">Browser</h2>
+## Browser
 
 Download using Bower:
 
@@ -36,13 +32,13 @@ bower install sister --save
 
 In browser, use `gajus.Sister` `window` object.
 
-<h2 id="sister-methods">Methods</h2>
+## Methods
 
 - [emitter.<b>on</b>(event, handler)](#emitter-on)
 - [emitter.<b>off</b>(listener)](#emitter-off)
 - [emitter.<b>trigger</b>(event, data)](#emitter-trigger)
 
-<h2 id="sister-parameters">Parameters</h2>
+## Parameters
 
 * `emitter` Instance of the `Sister()` object.
 * `event` Name of the event.
@@ -50,23 +46,23 @@ In browser, use `gajus.Sister` `window` object.
 * `listener` Event listener.
 
 <a name="emitter-on"></a>
-<h4 id="sister-parameters--emitter-on-event-handler-">`emitter.on(event, handler)`</h4>
+#### `emitter.on(event, handler)`
 
 - Add `handler` for `event`.
 - Return `listener`.
 
 <a name="emitter-off"></a>
-<h4 id="sister-parameters--emitter-off-listener-">`emitter.off(listener)`</h4>
+#### `emitter.off(listener)`
 
 - Remove `listener`.
 
 <a name="emitter-trigger"></a>
-<h4 id="sister-parameters--emitter-trigger-event-data-">`emitter.trigger(event, data)`</h4>
+#### `emitter.trigger(event, data)`
 
 - Invoke `event` listeners (in sequence) with the supplied argument.
 - Return `emitter`.
 
-<h2 id="sister-usage">Usage</h2>
+## Usage
 
 ```js
 var Sister = require('sister'),
@@ -81,7 +77,7 @@ emitter.trigger('foo', 'baz');
 
 This example will print "bar" in the `console.log`.
 
-<h2 id="sister-similar-libraries">Similar Libraries</h2>
+## Similar Libraries
 
 There are several existing alternatives that you might want to consider before starting to write your own implementation of an event emitter.
 

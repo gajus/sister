@@ -8,7 +8,8 @@ var karma = require('karma').server,
     browserify = require('gulp-browserify'),
     fs = require('fs'),
     del = require('del'),
-    jsonfile = require('jsonfile');
+    jsonfile = require('jsonfile'),
+    GitDown = require('gitdown');
 
 gulp.task('lint', function () {
     return gulp
@@ -54,8 +55,15 @@ gulp.task('version', ['bundle'], function () {
     jsonfile.writeFileSync('./bower.json', bower);
 });
 
+gulp.task('gitdown', function () {
+    return GitDown
+        .read('.gitdown/README.md')
+        .write('README.md');
+});
+
 gulp.task('watch', function () {
     gulp.watch(['./src/*', './tests/*', './package.json'], ['default']);
+    gulp.watch(['./.gitdown/*'], ['gitdown']);
 });
 
 gulp.task('test', ['version'], function () {
