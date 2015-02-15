@@ -1,8 +1,12 @@
+'use strict';
+
+var Sister;
+
 /**
 * @link https://github.com/gajus/sister for the canonical source repository
 * @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause
 */
-function Sister () {
+Sister = function () {
     var sister = {},
         events = {};
 
@@ -30,7 +34,7 @@ function Sister () {
     sister.off = function (listener) {
         var index = events[listener.name].indexOf(listener);
 
-        if (index != -1) {
+        if (index !== -1) {
             events[listener.name].splice(index, 1);
         }
     };
@@ -52,7 +56,7 @@ function Sister () {
     };
 
     return sister;
-}
+};
 
 global.gajus = global.gajus || {};
 global.gajus.Sister = Sister;

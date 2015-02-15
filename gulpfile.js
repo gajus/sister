@@ -1,7 +1,7 @@
 var karma = require('karma').server,
     gulp = require('gulp'),
     mocha = require('gulp-mocha'),
-    jshint = require('gulp-jshint'),
+    eslint = require('gulp-eslint'),
     header = require('gulp-header'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
@@ -9,13 +9,14 @@ var karma = require('karma').server,
     fs = require('fs'),
     del = require('del'),
     jsonfile = require('jsonfile'),
-    GitDown = require('gitdown');
+    gitdown = require('gitdown');
 
 gulp.task('lint', function () {
     return gulp
-        .src('./src/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('jshint-stylish'));
+        .src(['./src/*.js', './src/tests/*.js'])
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failOnError());
 });
 
 gulp.task('clean', ['lint'], function (cb) {
@@ -56,7 +57,7 @@ gulp.task('version', ['bundle'], function () {
 });
 
 gulp.task('gitdown', function () {
-    return GitDown
+    return gitdown
         .read('.gitdown/README.md')
         .write('README.md');
 });
