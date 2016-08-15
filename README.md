@@ -290,3 +290,4 @@ There are several existing alternatives that you might want to consider before s
 |[tvsudhir/EventEmitter](https://github.com/tvsudhir/EventEmitter)| 0 | 0 | 11 | 2014-07-30 |
 |[yomotsu/PeriodicEventEmitter](https://github.com/yomotsu/PeriodicEventEmitter)| 0 | 0 | 1 | 2014-08-11 |
 |[zaphod1984/eventEmitterDemux](https://github.com/zaphod1984/eventEmitterDemux)| 0 | 0 | 8 | 2014-02-19 |
+|[splittydev/evee.js](https://github.com/splittydev/evee.js)]| 4 | 0 | 56 | 2016-08-15 |
