@@ -117,6 +117,7 @@ There are several existing alternatives that you might want to consider before s
 |[bredele/emitter-queue](https://github.com/bredele/emitter-queue)| 10 | 0 | 14 | 2014-04-07 |
 |[postaljs/monopost.js](https://github.com/postaljs/monopost.js)| 9 | 2 | 10 | 2013-02-04 |
 |[addyosmani/polymer-eventemitter](https://github.com/addyosmani/polymer-eventemitter)| 9 | 0 | 15 | 2014-01-24 |
+|[splittydev/evee.js](https://github.com/splittydev/evee.js)| 8 | 2 | 63 | 2016-08-17 |
 |[busterjs/bane](https://github.com/busterjs/bane)| 8 | 1 | 33 | 2013-11-23 |
 |[fnando/emitter](https://github.com/fnando/emitter)| 8 | 1 | 16 | 2014-10-01 |
 |[sakabako/paperboy](https://github.com/sakabako/paperboy)| 7 | 1 | 59 | 2014-10-01 |
@@ -290,4 +291,3 @@ There are several existing alternatives that you might want to consider before s
 |[tvsudhir/EventEmitter](https://github.com/tvsudhir/EventEmitter)| 0 | 0 | 11 | 2014-07-30 |
 |[yomotsu/PeriodicEventEmitter](https://github.com/yomotsu/PeriodicEventEmitter)| 0 | 0 | 1 | 2014-08-11 |
 |[zaphod1984/eventEmitterDemux](https://github.com/zaphod1984/eventEmitterDemux)| 0 | 0 | 8 | 2014-02-19 |
-|[splittydev/evee.js](https://github.com/splittydev/evee.js)]| 4 | 0 | 56 | 2016-08-15 |
