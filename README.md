@@ -98,6 +98,7 @@ There are several existing alternatives that you might want to consider before s
 |[FredyC/promised-land](https://github.com/FredyC/promised-land)| 67 | 1 | 25 | 2014-09-05 |
 |[postaljs/monologue.js](https://github.com/postaljs/monologue.js)| 66 | 6 | 32 | 2014-06-20 |
 |[scottcorgan/tiny-emitter](https://github.com/scottcorgan/tiny-emitter)| 66 | 2 | 24 | 2014-09-16 |
+|[ai/nanoevents](https://github.com/ai/nanoevents)| 64 | 4 | 91 | 2017-09-21 |
 |[primus/EventEmitter3](https://github.com/primus/EventEmitter3)| 57 | 7 | 76 | 2014-10-10 |
 |[segmentio/wildcards](https://github.com/segmentio/wildcards)| 56 | 2 | 21 | 2014-04-10 |
 |[facebook/emitter](https://github.com/facebook/emitter)| 50 | 12 | 6 | 2014-02-20 |
