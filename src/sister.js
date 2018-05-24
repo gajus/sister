@@ -58,7 +58,4 @@ Sister = function () {
     return sister;
 };
 
-global.gajus = global.gajus || {};
-global.gajus.Sister = Sister;
-
 module.exports = Sister;
