@@ -1,5 +1,9 @@
 {
-  "author": "Gajus Kuizinas <gk@anuary.com>",
+  "author": {
+    "email": "gajus@gajus.com",
+    "name": "Gajus Kuizinas",
+    "url": "http://gajus.com"
+  },
   "dependencies": {},
   "description": "Event manager.",
   "devDependencies": {
