@@ -1,12 +1,8 @@
-<!--
-This file has been generated using GitDown (https://github.com/gajus/gitdown).
-Direct edits to this will be be overwritten. Look for GitDown markup file under ./.gitdown/ path.
--->
-<h1 id="sister">Sister</h1>
+<a name="sister"></a>
+# Sister
 
-[![Travis build status](http://img.shields.io/travis/gajus/sister/master.svg?style=flat)](https://travis-ci.org/gajus/sister)
-[![NPM version](http://img.shields.io/npm/v/sister.svg?style=flat)](https://www.npmjs.org/package/sister)
-[![Bower version](http://img.shields.io/bower/v/sister.svg?style=flat)](http://bower.io/search/?q=sister)
+[![Travis build status](http://img.shields.io/travis/gajus/sister/master.svg?style=flat-square)](https://travis-ci.org/gajus/sister)
+[![NPM version](http://img.shields.io/npm/v/sister.svg?style=flat-square)](https://www.npmjs.org/package/sister)
 
 Foundation for your emitter implementation.
 
@@ -14,11 +10,13 @@ Foundation for your emitter implementation.
 
 Please [submit your implementation](https://github.com/gajus/sister/issues) to the index when you are done.
 
-<h2 id="sister-in-all-seriousness">In All Seriousness</h2>
+<a name="sister-in-all-seriousness"></a>
+## In All Seriousness
 
 Sister is 0.5kb event emitter that does three things: `on`, `off` and `trigger`. It [performs well](http://jsperf.com/sister-event) (~18,313,548 operations/sec in browser). If you need something more advanced, consider one of the existing, mature [alternatives](#similar-libraries).
 
-<h2 id="sister-node">Node</h2>
+<a name="sister-node"></a>
+## Node
 
 Download using NPM:
 
@@ -26,7 +24,8 @@ Download using NPM:
 npm install sister --save
 ```
 
-<h2 id="sister-browser">Browser</h2>
+<a name="sister-browser"></a>
+## Browser
 
 Download using Bower:
 
@@ -36,13 +35,15 @@ bower install sister --save
 
 In browser, use `gajus.Sister` `window` object.
 
-<h2 id="sister-methods">Methods</h2>
+<a name="sister-methods"></a>
+## Methods
 
 - [emitter.<b>on</b>(event, handler)](#emitter-on)
 - [emitter.<b>off</b>(listener)](#emitter-off)
 - [emitter.<b>trigger</b>(event, data)](#emitter-trigger)
 
-<h2 id="sister-parameters">Parameters</h2>
+<a name="sister-parameters"></a>
+## Parameters
 
 * `emitter` Instance of the `Sister()` object.
 * `event` Name of the event.
@@ -50,23 +51,27 @@ In browser, use `gajus.Sister` `window` object.
 * `listener` Event listener.
 
 <a name="emitter-on"></a>
-<h4 id="sister-parameters--emitter-on-event-handler-">`emitter.on(event, handler)`</h4>
+<a name="sister-parameters-emitter-on-event-handler"></a>
+#### <code>emitter.on(event, handler)</code>
 
 - Add `handler` for `event`.
 - Return `listener`.
 
 <a name="emitter-off"></a>
-<h4 id="sister-parameters--emitter-off-listener-">`emitter.off(listener)`</h4>
+<a name="sister-parameters-emitter-off-listener"></a>
+#### <code>emitter.off(listener)</code>
 
 - Remove `listener`.
 
 <a name="emitter-trigger"></a>
-<h4 id="sister-parameters--emitter-trigger-event-data-">`emitter.trigger(event, data)`</h4>
+<a name="sister-parameters-emitter-trigger-event-data"></a>
+#### <code>emitter.trigger(event, data)</code>
 
 - Invoke `event` listeners (in sequence) with the supplied argument.
 - Return `emitter`.
 
-<h2 id="sister-usage">Usage</h2>
+<a name="sister-usage"></a>
+## Usage
 
 ```js
 var Sister = require('sister'),
@@ -81,7 +86,8 @@ emitter.trigger('foo', 'baz');
 
 This example will print "bar" in the `console.log`.
 
-<h2 id="sister-similar-libraries">Similar Libraries</h2>
+<a name="sister-similar-libraries"></a>
+## Similar Libraries
 
 There are several existing alternatives that you might want to consider before starting to write your own implementation of an event emitter.
 
@@ -98,7 +104,6 @@ There are several existing alternatives that you might want to consider before s
 |[FredyC/promised-land](https://github.com/FredyC/promised-land)| 67 | 1 | 25 | 2014-09-05 |
 |[postaljs/monologue.js](https://github.com/postaljs/monologue.js)| 66 | 6 | 32 | 2014-06-20 |
 |[scottcorgan/tiny-emitter](https://github.com/scottcorgan/tiny-emitter)| 66 | 2 | 24 | 2014-09-16 |
-|[ai/nanoevents](https://github.com/ai/nanoevents)| 64 | 4 | 91 | 2017-09-21 |
 |[primus/EventEmitter3](https://github.com/primus/EventEmitter3)| 57 | 7 | 76 | 2014-10-10 |
 |[segmentio/wildcards](https://github.com/segmentio/wildcards)| 56 | 2 | 21 | 2014-04-10 |
 |[facebook/emitter](https://github.com/facebook/emitter)| 50 | 12 | 6 | 2014-02-20 |
@@ -118,7 +123,6 @@ There are several existing alternatives that you might want to consider before s
 |[bredele/emitter-queue](https://github.com/bredele/emitter-queue)| 10 | 0 | 14 | 2014-04-07 |
 |[postaljs/monopost.js](https://github.com/postaljs/monopost.js)| 9 | 2 | 10 | 2013-02-04 |
 |[addyosmani/polymer-eventemitter](https://github.com/addyosmani/polymer-eventemitter)| 9 | 0 | 15 | 2014-01-24 |
-|[splittydev/evee.js](https://github.com/splittydev/evee.js)| 8 | 2 | 63 | 2016-08-17 |
 |[busterjs/bane](https://github.com/busterjs/bane)| 8 | 1 | 33 | 2013-11-23 |
 |[fnando/emitter](https://github.com/fnando/emitter)| 8 | 1 | 16 | 2014-10-01 |
 |[sakabako/paperboy](https://github.com/sakabako/paperboy)| 7 | 1 | 59 | 2014-10-01 |
@@ -292,4 +296,3 @@ There are several existing alternatives that you might want to consider before s
 |[tvsudhir/EventEmitter](https://github.com/tvsudhir/EventEmitter)| 0 | 0 | 11 | 2014-07-30 |
 |[yomotsu/PeriodicEventEmitter](https://github.com/yomotsu/PeriodicEventEmitter)| 0 | 0 | 1 | 2014-08-11 |
 |[zaphod1984/eventEmitterDemux](https://github.com/zaphod1984/eventEmitterDemux)| 0 | 0 | 8 | 2014-02-19 |
-|[bjarneo/hoki](https://github.com/bjarneo/hoki)| 0 | 0 | 36 | 2016-04-03 |

@@ -1,20 +1,11 @@
 {
-  "name": "sister",
-  "description": "Event manager.",
-  "version": "3.0.0",
-  "main": "src/sister.js",
   "author": "Gajus Kuizinas <gk@anuary.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gajus/sister"
-  },
-  "keywords": [
-    "events"
-  ],
+  "dependencies": {},
+  "description": "Event manager.",
   "devDependencies": {
     "chai": "^2.0.0",
     "del": "^1.1.1",
-    "gitdown": "^1.3.0",
+    "gitdown": "^2.5.2",
     "gulp": "^3.8.11",
     "gulp-browserify": "^0.5.1",
     "gulp-eslint": "^0.4.2",
@@ -26,8 +17,18 @@
     "karma": "^0.12.31",
     "mocha": "^2.1.0"
   },
-  "scrips": {
+  "keywords": [
+    "events"
+  ],
+  "main": "src/sister.js",
+  "name": "sister",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gajus/sister"
+  },
+  "scripts": {
+    "generate-readme": "gitdown ./.README/README.md --output-file ./README.md",
     "test": "gulp test"
   },
-  "dependencies": {}
+  "version": "3.0.0"
 }
