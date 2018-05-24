@@ -24,5 +24,5 @@
     "generate-readme": "gitdown ./.README/README.md --output-file ./README.md",
     "test": "mocha"
   },
-  "version": "3.0.0"
+  "version": "3.0.1"
 }
