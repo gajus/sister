@@ -1,5 +1,6 @@
 /node_modules
 /sandbox
 /coverage
+/dist
 .npmrc
 npm-debug.log
