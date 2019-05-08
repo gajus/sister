@@ -14,6 +14,7 @@
   "keywords": [
     "events"
   ],
+  "license": "BSD-3-Clause",
   "main": "src/sister.js",
   "name": "sister",
   "repository": {
